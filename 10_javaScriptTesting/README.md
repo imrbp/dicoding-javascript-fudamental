@@ -71,5 +71,5 @@ describe(‘pengujian olah aritmatika’, () => {
 });
 ```
 
-Simpan file eksekusi test pada filer ``__test__`.  
+Simpan file eksekusi test pada filer `__test__`.  
 Kemudian buat file test dengan nama file `<file-name>.test.js`.
