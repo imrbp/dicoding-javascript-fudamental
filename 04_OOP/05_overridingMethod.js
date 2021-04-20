@@ -21,12 +21,6 @@ Must call super constructor in derived class before accessing 'this' or returnin
 **/
 
 // -> karena error, ini adalah solusi menggunakan super() :
-constructor(username, isBussinessAccount, phone) {
-  super(phone);
-  this.username = username;
-  this.isBussinessAccount = true;
-}
-
 // Overriding Method
 // super.methodName()
 class WhatsApp extends Mail{

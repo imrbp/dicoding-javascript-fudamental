@@ -30,3 +30,46 @@ Sebuah proses pengujian perangkat lunak dapat dilakukan secara:
    - Kasus **proses registrasi akun** :
      - Pengguna dapat melakukan registrasi secara normal.
      - Pengguna dengna email sama tidak dapat melakukan registrasi.
+
+# Jest
+
+[jest cheat sheet](https://devhints.io/jest)
+Jest merupakan salah satu framework testing paling populer untuk menuliskan kode pengujian pada bahasa pemrograman JS. Jest dapat digunaskan untuk menuliskan script testing pada aplikasi backend maupun frontend.
+
+## Practice a test
+
+```
+test(‘deskripsi dari testcase kamu’, () => {
+    expect(perintah).matcher(nilai yang diekspektasikan);
+});
+
+// contoh
+test(‘dua tambah dua adalah empat’, () => {
+    expect(2+2).toBe(4);
+});
+```
+
+**expect(2+2)** merupakan segmen yang berisi perintah yang menghasilkan nilai balikan, perintah tersebtu dapat berupa fungsi ataupun perintah langsung.
+
+**toBe(4)** disebuh matcher, berisi nilai yang diharapkan dari sebuah perintah yang dilakukan sebelumnya.
+
+- **toBe(x)** : bahwa nilai ekspetasi yang diharapkan adalah x.
+- **toEqual(x)** : bahwa nilai ekspetasi yang diharapkan sama adalah x.
+- **toBeNull()** : bahwa nilai ekspetasi yang diharapkan sama adalah null.
+- **toBeTruthy()** : bahwa nilai ekspetasi yang diharapkan sama adalah turth.
+- **toBeFalsy()** : bahwa nilai ekspetasi yang diharapkan sama adalah false.
+
+```
+describe(‘pengujian olah aritmatika’, () => {
+   test(‘#1 dua tambah dua adalah empat’, () => {
+        expect(2+2).toBe(4);
+   });
+
+   test(‘#2 dua kali tiga adalah enam, () => {
+        expect(2*3).toBe(6);
+   });
+});
+```
+
+Simpan file eksekusi test pada filer ``__test__`.  
+Kemudian buat file test dengan nama file `<file-name>.test.js`.
