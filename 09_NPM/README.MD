@@ -14,7 +14,7 @@ contoh install package lodash
 npm install lodash
 ```
 
-### object dependencies
+### Object dependencies
 
 object dependencies merupakan object yang menampung package yang kita gunakan untuk membuat aplikasi.
 
